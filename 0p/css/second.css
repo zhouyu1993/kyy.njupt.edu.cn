@@ -1,0 +1,96 @@
+*{
+	font-family: Microsoft YaHei;
+}
+
+
+.mid-cont  {
+     margin-top: 35px;
+}
+
+
+.left-part{
+	background-color: #ededed;
+	/*height: 900px;*/                        /* 左半边测试高度，待删*/
+}
+
+
+.left-title{
+	font-weight: 200;
+	font-size: 25px;
+	color: #3399cc;
+	margin-top: 15%;
+	margin-left: 5%;
+	margin-bottom: 15%;
+}
+
+.left-part button{
+	font-size: 16px;
+	font-weight: 200;
+	color: #353535;
+	margin-bottom: 7px;
+	width: 100%;
+	text-align: center;
+	border-radius: 25px;
+	border: none;
+	box-shadow: 0px 0px 10px 6px #e6e6e6;
+	background: -webkit-linear-gradient(#dcc0ff,#8d98db); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#dcc0ff,#8d98db); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#dcc0ff,#8d98db); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#dcc0ff,#8d98db); 
+}
+
+.left-part button:hover{
+	background: -webkit-linear-gradient(#ffaf9a,#ffbf36 ); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#ffaf9a,#ffbf36 ); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#ffaf9a,#ffbf36 ); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#ffaf9a,#ffbf36 ); 
+}
+
+.right-part{
+	/*height: 900px; */                       /* 右半边测试高度，待删*/
+	padding-left: 39px;
+	padding-right: 39px;
+	
+}
+
+
+.right-title-bar{
+	border-bottom: 3px solid #3399cc;
+	padding-bottom: 12px;
+	margin-bottom: 30px;
+}
+
+
+.right-title-bar ul{
+	margin-bottom: 0;
+	padding-left: 20px;
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    top:14px;
+}
+
+.right-title-bar ul li{
+	color: #353535;
+	float: left;
+	font-size: 25px;
+	font-weight: 200;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.right-cont p{
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ededed;
+	margin-bottom: 18px;
+	
+}
+
+.right-cont a{
+	color: #353535;
+}
+
+.right-cont .time{
+	float: right;
+	color: #3399cc;
+}

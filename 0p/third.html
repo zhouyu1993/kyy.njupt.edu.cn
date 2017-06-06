@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>三级页面</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" type="text/css" href="./css/third.css">
+	<link rel="stylesheet" type="text/css" href="./css/menu.min.css">
+</head>
+<body>
+	<div id="header">
+	   <img class="title_word" src="./image/title_word.png">
+	    <div class="fn_header" >
+			   <div class="herf_header">
+			   <!-- <a  class="change-color" > 切换整体颜色</a>
+			    <a  class="change-bg" > 切换背景</a> -->
+				<a href="http://www.njupt.edu.cn/">学校首页</a>
+				<a href="javascript:void(0);" onclick="SetHome(this,'http://kjc.njupt.edu.cn');">设为首页</a>
+				<a  href="javascript:void(0);" onclick="AddFavorite('我的网站',location.href)">加入收藏</a>
+
+			   </div>
+	
+	
+			   <div class="search"> 
+					<input type="text" value="  站内搜索" name=""  >
+					<img src="./image/search_icon.png" type="submit">
+			   </div>
+		</div>
+	</div>
+
+			
+	<nav class="navbar" role="navigation">
+		
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active">
+					 <a href="index.html">首页</a>
+				</li>
+				
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    部门概况
+	                </a>
+	                <ul class="dropdown-menu" >
+	                    <li><a href="#">部门职责</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">领导分工</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">职能科室</a></li>
+	                    
+	                </ul>
+	            </li>
+
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    科研机构
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li>
+	                    <li class="divide"></li> 
+	                    <li><a href="#">机构一览</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>
+	                    
+	                </ul>
+	            </li>
+				
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    科研项目
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="second.html">通知公告</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>    
+	                </ul>
+	            </li>
+
+	            <li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    人文社科
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="second.html">通知公告</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>    
+	                </ul>
+	            </li>
+				
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    科研成果
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">成果一览</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>    
+	                </ul>
+	            </li>
+				
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    协同创新
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">中心一览</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>    
+	                </ul>
+	            </li>
+				
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    科技合作
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">科技合作概况</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">技术需求</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">成果推广</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>    
+	                </ul>
+	            </li>
+				
+                <li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    技术转移
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>    
+	                </ul>
+	            </li>
+
+
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    学术交流
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">最新动态</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>    
+	                </ul>
+	            </li>
+				
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    国防科研
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">通知公告</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>    
+	                </ul>
+	            </li>
+				
+
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    政策文件
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">纵向项目</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">横向项目</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">论文专著</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">知识产权</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">科研平台</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">成果报奖</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">技术转移</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">学术交流</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">其他</a></li>    
+	                </ul>
+	            </li>
+				
+                <li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    公示信息
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">纵向项目</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">横向项目</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">论文专著</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">知识产权</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">科研平台</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">成果报奖</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">技术转移</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">学术交流</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">其他</a></li>    
+	                </ul>
+	            </li>
+
+			</ul>
+			
+		</div>
+	</nav>	
+
+	<div class="mid-cont">
+	    <div class="container">
+	        
+	        	<div class="col-md-2 left-part">
+	        		<p class="left-title">科研项目</p>
+	        		<p><button>办事指南</button></p>
+	        		<p><button>通知公告</button></p>
+	        		<p><button>相关政策</button></p>
+
+
+	        	</div>
+	        	
+	        	<div class="col-md-10 right-part">
+	        		<div class="right-title-bar">
+	        			<img src="./image/more.png" style="width: 8%">
+	        			<ul class="right-bar-list">
+	        				<li>首页</li>
+	        				<li><img src="./image/r-arrow.png" style="width: 25px;"></li>
+	        				<li>科研项目</li>
+	        				<li><img src="./image/r-arrow.png" style="width: 25px;"></li>
+	        				<li>通知公告</li>
+	        				<li><img src="./image/r-arrow.png" style="width: 25px;"></li>
+	        				<li>内容</li>
+	        			</ul>
+	        		</div>
+	        		<div class="right-cont"> 
+                         <h3 class="zw-title">福建省高校创新创业教育改革工作学习考察团来我校调研</h3>
+                         <p class="zw-info">
+                         <span class="zw-time">2017-03-01</span>
+                         <span >来源:<span class="zw-laiyuan">南邮技术转移中心</span></span>
+                         </p>
+                         <div class="zw">
+                         	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2月28日，福建省教育厅学生工作处处长谢友平率队来我校学习考察调研创新创业工作。我校副校长王宗荣热情接待了福建省高校创新创业教育改革工作学习考察团一行，学生工作处、教务处、招生就业处、国家大学科技园管理办公室、管理学院等部门负责人参加调研和交流。
+　　王宗荣副校长对考察团一行的到来表示热烈欢迎。招生就业处负责人简要介绍了我校办学历史和创新创业工作的开展情况。管理学院负责人作了“创新创业实践教学改革工作汇报”，从创新创业实践教学体系、创新创业实践教学平台、教学资源建设、产教融合设想等四个方面阐述创新创业实践教学改革内容。国家大学科技园管理办公室负责人作了“发挥大信息学科优势，打造物联网众创空间”的主题发言，介绍了南邮科技园面向创新创业大学生，坚持一个特色（物联网、互联网+），依托两类平台（科研平台、产学研公共服务平台），打造三个空间（创新空间、创业空间和科普空间），建立全方位服务体系，孵化科技型创业企业的情况。
+　　考察团一行参观了物联网国家大学科技园、国家级大学生众创空间、通信技术研究所、教育部泛在网络健康服务系统工程研究中心、管理学院创业者沙盘和正在建设中的创业情境模拟实验室等科研机构和创新创业平台。双方还就大学生创新创业教育改革等相关问题展开了深入探讨、交流。 
+<img src="./image/111.jpg">
+                         </div>
+	        		</div>
+	        	</div>
+	        
+	    </div>
+	</div>		
+
+   
+
+
+	<div id="footer">
+	   <div class="container">
+	   <div class="footer-blank"></div>
+		<p>地址:南京邮电大学亚东新城区文苑路9号(210023)  &nbsp &nbsp&nbsp&nbsp        电话:025-85866911 &nbsp &nbsp&nbsp&nbsp    传真:025-85866911          &nbsp &nbsp&nbsp&nbsp  Email:kjc@njupt.edu.cn</p>
+		<p>Copyright © www.njupt.edu.cn All Rights Reserved</p>
+		
+       </div>
+	</div>
+
+
+
+<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+
+<script type="text/javascript">
+    var getRightHeight = $(".right-part").css("height")
+	$(".left-part").css("height",getRightHeight)
+</script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>二级页面</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" type="text/css" href="./css/second.css">
+	<link rel="stylesheet" type="text/css" href="./css/menu.min.css">
+</head>
+<body>
+	<div id="header">
+	   <img class="title_word" src="./image/title_word.png">
+	    <div class="fn_header" >
+			   <div class="herf_header">
+			   <!-- <a  class="change-color" > 切换整体颜色</a>
+			    <a  class="change-bg" > 切换背景</a> -->
+				<a href="http://www.njupt.edu.cn/">学校首页</a>
+				<a href="javascript:void(0);" onclick="SetHome(this,'http://kjc.njupt.edu.cn');">设为首页</a>
+				<a  href="javascript:void(0);" onclick="AddFavorite('我的网站',location.href)">加入收藏</a>
+
+			   </div>
+	
+	
+			   <div class="search"> 
+					<input type="text" value="  站内搜索" name=""  >
+					<img src="./image/search_icon.png" type="submit">
+			   </div>
+		</div>
+	</div>
+
+			
+	<nav class="navbar" role="navigation">
+		
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active">
+					 <a href="index.html">首页</a>
+				</li>
+				
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    部门概况
+	                </a>
+	                <ul class="dropdown-menu" >
+	                    <li><a href="#">部门职责</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">领导分工</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">职能科室</a></li>
+	                    
+	                </ul>
+	            </li>
+
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    科研机构
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li>
+	                    <li class="divide"></li> 
+	                    <li><a href="#">机构一览</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>
+	                    
+	                </ul>
+	            </li>
+				
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    科研项目
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="second.html">通知公告</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>    
+	                </ul>
+	            </li>
+
+	            <li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    人文社科
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="second.html">通知公告</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>    
+	                </ul>
+	            </li>
+				
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    科研成果
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">成果一览</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>    
+	                </ul>
+	            </li>
+				
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    协同创新
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">中心一览</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>    
+	                </ul>
+	            </li>
+				
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    科技合作
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">科技合作概况</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">技术需求</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">成果推广</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>    
+	                </ul>
+	            </li>
+				
+                <li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    技术转移
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>    
+	                </ul>
+	            </li>
+
+
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    学术交流
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">最新动态</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>    
+	                </ul>
+	            </li>
+				
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    国防科研
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">办事指南</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">通知公告</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">相关政策</a></li>    
+	                </ul>
+	            </li>
+				
+
+				<li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    政策文件
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">纵向项目</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">横向项目</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">论文专著</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">知识产权</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">科研平台</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">成果报奖</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">技术转移</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">学术交流</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">其他</a></li>    
+	                </ul>
+	            </li>
+				
+                <li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    公示信息
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">纵向项目</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">横向项目</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">论文专著</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">知识产权</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">科研平台</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">成果报奖</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">技术转移</a></li> 
+	                    <li class="divide"></li>
+	                    <li><a href="#">学术交流</a></li>
+	                    <li class="divide"></li>
+	                    <li><a href="#">其他</a></li>    
+	                </ul>
+	            </li>
+
+			</ul>
+			
+		</div>
+	</nav>	
+
+	<div class="mid-cont">
+	    <div class="container">
+	        
+	        	<div class="col-md-2 left-part">
+	        		<p class="left-title">科研项目</p>
+	        		<p><button>办事指南</button></p>
+	        		<p><button>通知公告</button></p>
+	        		<p><button>相关政策</button></p>
+
+
+	        	</div>
+	        	
+	        	<div class="col-md-10 right-part">
+	        		<div class="right-title-bar">
+	        			<img src="./image/more.png" style="width: 8%">
+	        			<ul class="right-bar-list">
+	        				<li>首页</li>
+	        				<li><img src="./image/r-arrow.png" style="width: 25px;"></li>
+	        				<li>科研项目</li>
+	        				<li><img src="./image/r-arrow.png" style="width: 25px;"></li>
+	        				<li>通知公告</li>
+	        			</ul>
+	        		</div>
+	        		<div class="right-cont">
+	        		     <p>
+	        		     <a href="third.html">
+	        		     <span class="mini-1">【科协项目】</span>
+	        		     <span class="mini-2">关于评选第十二届南京市“十大科技之星”的通知</span>
+	        		     </a>
+	        		     <span class="time">2017-03-23</span>
+	        		     </p>
+
+	        		     <p>
+	        		     <a href="">
+	        		     <span class="mini-1">【科协项目】</span>
+	        		     <span class="mini-2">关于实施2017年度江苏省科协“提升学会服务科技创新能力计划”的通知</span>
+	        		     </a>
+	        		     <span class="time">2017-03-23</span>
+	        		     </p>
+                         
+                          <p>
+	        		     <a href="">
+	        		     <span class="mini-1">【科协项目】</span>
+	        		     <span class="mini-2">关于评选第十二届南京市“十大科技之星”的通知</span>
+	        		     </a>
+	        		     <span class="time">2017-03-23</span>
+	        		     </p>
+
+	        		     <p>
+	        		     <a href="">
+	        		     <span class="mini-1">【科协项目】</span>
+	        		     <span class="mini-2">关于实施2017年度江苏省科协“提升学会服务科技创新能力计划”的通知</span>
+	        		     </a>
+	        		     <span class="time">2017-03-23</span>
+	        		     </p>
+
+	        		      <p>
+	        		     <a href="">
+	        		     <span class="mini-1">【科协项目】</span>
+	        		     <span class="mini-2">关于评选第十二届南京市“十大科技之星”的通知</span>
+	        		     </a>
+	        		     <span class="time">2017-03-23</span>
+	        		     </p>
+
+	        		     <p>
+	        		     <a href="">
+	        		     <span class="mini-1">【科协项目】</span>
+	        		     <span class="mini-2">关于实施2017年度江苏省科协“提升学会服务科技创新能力计划”的通知</span>
+	        		     </a>
+	        		     <span class="time">2017-03-23</span>
+	        		     </p>
+
+	        		      <p>
+	        		     <a href="">
+	        		     <span class="mini-1">【科协项目】</span>
+	        		     <span class="mini-2">关于评选第十二届南京市“十大科技之星”的通知</span>
+	        		     </a>
+	        		     <span class="time">2017-03-23</span>
+	        		     </p>
+
+	        		     <p>
+	        		     <a href="">
+	        		     <span class="mini-1">【科协项目】</span>
+	        		     <span class="mini-2">关于实施2017年度江苏省科协“提升学会服务科技创新能力计划”的通知</span>
+	        		     </a>
+	        		     <span class="time">2017-03-23</span>
+	        		     </p>
+
+	        		      <p>
+	        		     <a href="">
+	        		     <span class="mini-1">【科协项目】</span>
+	        		     <span class="mini-2">关于评选第十二届南京市“十大科技之星”的通知</span>
+	        		     </a>
+	        		     <span class="time">2017-03-23</span>
+	        		     </p>
+
+	        		     <p>
+	        		     <a href="">
+	        		     <span class="mini-1">【科协项目】</span>
+	        		     <span class="mini-2">关于实施2017年度江苏省科协“提升学会服务科技创新能力计划”的通知</span>
+	        		     </a>
+	        		     <span class="time">2017-03-23</span>
+	        		     </p>
+
+	        		      <p>
+	        		     <a href="">
+	        		     <span class="mini-1">【科协项目】</span>
+	        		     <span class="mini-2">关于评选第十二届南京市“十大科技之星”的通知</span>
+	        		     </a>
+	        		     <span class="time">2017-03-23</span>
+	        		     </p>
+
+	        		     <p>
+	        		     <a href="">
+	        		     <span class="mini-1">【科协项目】</span>
+	        		     <span class="mini-2">关于实施2017年度江苏省科协“提升学会服务科技创新能力计划”的通知</span>
+	        		     </a>
+	        		     <span class="time">2017-03-23</span>
+	        		     </p>
+
+	        		      <p>
+	        		     <a href="">
+	        		     <span class="mini-1">【科协项目】</span>
+	        		     <span class="mini-2">关于评选第十二届南京市“十大科技之星”的通知</span>
+	        		     </a>
+	        		     <span class="time">2017-03-23</span>
+	        		     </p>
+
+	        		     <p>
+	        		     <a href="">
+	        		     <span class="mini-1">【科协项目】</span>
+	        		     <span class="mini-2">关于实施2017年度江苏省科协“提升学会服务科技创新能力计划”的通知</span>
+	        		     </a>
+	        		     <span class="time">2017-03-23</span>
+	        		     </p>
+	        		     
+	        		</div>
+	        	</div>
+	        
+	    </div>
+	</div>		
+
+   
+
+
+	<div id="footer">
+	   <div class="container">
+	   <div class="footer-blank"></div>
+		<p>地址:南京邮电大学亚东新城区文苑路9号(210023)  &nbsp &nbsp&nbsp&nbsp        电话:025-85866911 &nbsp &nbsp&nbsp&nbsp    传真:025-85866911          &nbsp &nbsp&nbsp&nbsp  Email:kjc@njupt.edu.cn</p>
+		<p>Copyright © www.njupt.edu.cn All Rights Reserved</p>
+		
+       </div>
+	</div>
+
+
+
+<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+<script type="text/javascript">
+    var getRightHeight = $(".right-part").css("height")
+	$(".left-part").css("height",getRightHeight)
+</script>
+</body>
+</html>
