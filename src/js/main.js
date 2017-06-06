@@ -1,6 +1,15 @@
-import $ from 'jquery';
-console.log($);
 // header change bg
-var header = document.querySelector('.app .header');
+var bg = $('.header .bg-wrapper')
+var i = 0
 setInterval(function() {
-}, 2000);
+    var w = bg.outerWidth() / 3
+    if (i === 2) {
+        i = 0
+    } else {
+        i ++
+    }
+    bg.css({
+        '-webkit-transform': 'translateX(-' + i * w + 'px)',
+        'transform': 'translateX(-' + i * w + 'px)'
+    })
+}, 3000)

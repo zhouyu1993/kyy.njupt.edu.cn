@@ -1,9 +1,11 @@
 # 安装
 
 ```
+yarn
+
 npm install
 
-cnpm install
+npm install
 ```
 
 # 启动

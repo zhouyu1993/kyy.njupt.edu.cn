@@ -3,8 +3,6 @@ var gulp = require('gulp');
 
 // import components
 var plumber = require('gulp-plumber');
-var babel = require('gulp-babel');
-var concat = require('gulp-concat');
 
 var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
@@ -22,11 +20,6 @@ gulp.task('dev', function() {
     // js
     gulp.src('./src/js/*.js')
         .pipe(plumber())
-        .pipe(babel({
-            presets: ['es2015'],
-            plugins: ['transform-runtime']
-        }))
-        .pipe(concat('index.js'))
         .pipe(gulp.dest('./dist/js'));
     // css
     gulp.src('./src/css/*.scss')
@@ -55,11 +48,6 @@ gulp.task('dev-server', function() {
     gulp.watch('./src/js/*.js', function(e){
         gulp.src(e.path)
             .pipe(plumber())
-            .pipe(babel({
-                presets: ['es2015'],
-                plugins: ['transform-runtime']
-            }))
-            .pipe(concat('index.js'))
             .pipe(gulp.dest('./dist/js'))
             .pipe(reload({ stream: true }));
         console.log(e.type, '-' , e.path);
@@ -91,11 +79,6 @@ gulp.task('dev-server', function() {
 gulp.task('build', function() {
     gulp.src(['./src/js/*.js'])
         .pipe(plumber())
-        .pipe(babel({
-            presets: ['es2015'],
-            plugins: ['transform-runtime']
-        }))
-        .pipe(concat('index.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./build/js'));
     gulp.src('./src/css/*.scss')
