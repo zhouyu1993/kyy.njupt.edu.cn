@@ -37,10 +37,60 @@
 
         .logo {
             position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
+            top: 30px;
+            left: 100px;
+            width: 400px;
+            height: 80px;
         }
+
+        .tool {
+            position: absolute;
+            top: 10px;
+            right: 100px;
+            height: 30px;
+            color: #fff;
+
+            a {
+                color: #fff;
+            }
+
+            span {
+                display: inline-block;
+                margin: 0 10px;
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+
+        .search {
+            position: absolute;
+            right: 100px;
+            bottom: 10px;
+            display: flex;
+            align-items: center;
+            height: 30px;
+            color: #fff;
+
+            input {
+                &[type=search] {
+                    width: 160px;
+                    height: 20px;
+                    padding-left: 4px;
+                    margin-right: 6px;
+                    font-size: 12px;
+                }
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .nav {
+        height: 100px;
+        margin-top: 30px;
+        background-color: red;
     }
 }

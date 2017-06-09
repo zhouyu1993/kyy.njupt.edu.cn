@@ -8,11 +8,12 @@ npm-debug.log
 # Nuxt build
 .nuxt
 
-# Nuxt generate
-dist
-
 # vscode
 .vscode
 
 # DS_Store
 .DS_Store
+
+# 0p
+
+0p
