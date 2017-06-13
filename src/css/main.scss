@@ -60,15 +60,72 @@
             color: #fff;
 
             a {
+                display: inline-block;
+                font-weight: bold;
                 color: #fff;
                 cursor: pointer;
+
+                span {
+                    display: inline-block;
+                    margin-left: 10px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
 
-            span {
+            .show-link {
+                position: relative;
                 display: inline-block;
-                margin: 0 10px;
-                font-size: 16px;
-                line-height: 30px;
+                font-weight: bold;
+                color: #fff;
+                cursor: pointer;
+
+                span {
+                    display: inline-block;
+                    margin-left: 10px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                &-menu {
+                    position: absolute;
+                    top: 24px;
+                    left: 10px;
+                    z-index: 20;
+                    display: none;
+                    height: 180px;
+                    min-width: 100px;
+                    padding: 5px 0;
+                    overflow: auto;
+                    background-color: #ededed;
+                    border-top: 3px solid #39c;
+                    border-right: 1px solid #39c;
+                    border-left: 1px solid #39c;
+                    border-radius: 5px;
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+
+                    li {
+                        font-size: 12px;
+                        text-align: center;
+
+                        a {
+                            display: block;
+                            padding: 0 5px;
+                            font-weight: bold;
+                            line-height: 24px;
+                            color: #333;
+                            white-space: nowrap;
+                        }
+
+                        &:hover {
+                            background-color: #f8f8f8;
+                        }
+                    }
+                }
             }
         }
 
@@ -88,6 +145,7 @@
                     padding-left: 6px;
                     margin-right: 6px;
                     font-size: 12px;
+                    font-weight: bold;
                     border-radius: 8px;
                 }
             }
@@ -102,13 +160,23 @@
 
     .nav {
         height: 53px;
+        font-weight: bold;
         background-color: #eee;
+
+        #wp_nav_w55 .wp_nav .sub-nav .nav-item a {
+            border-top: 1px dotted rgb(216, 225, 204)!important;
+
+            &:first-child {
+                border: 0!important;
+            }
+        }
     }
 
     .module1-head {
         display: flex;
         align-items: center;
         width: 1200px;
+        padding: 0 20px;
         margin: 20px auto 0;
 
         .pic, .notice {
@@ -165,6 +233,7 @@
         display: flex;
         align-items: center;
         width: 1200px;
+        padding: 0 20px;
         margin: 0 auto;
 
         .pic {
@@ -173,6 +242,45 @@
             &-window {
                 width: 550px;
                 height: 430px;
+
+                .picbase1-content {
+                    right: 60px!important;
+                    bottom: 40px!important;
+                    left: 60px!important;
+                    max-width: initial!important;
+                    min-width: initial!important;
+                    text-align: center!important;
+
+                    h2 {
+                        font-size: 18px!important;
+                        font-weight: bold!important;
+                        background-color: rgba(0, 0, 0, .8)!important;
+                        border: 0!important;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+
+                    p {
+                        display: none!important;
+                    }
+                }
+
+                .picbase1-credit {
+                    display: none!important;
+                }
+
+                .picbase1-slidenav {
+                    bottom: 15px!important;
+
+                    li {
+                        background-color: #878787!important;
+
+                        &.active {
+                            background-color: #39c!important;
+                        }
+                    }
+                }
             }
         }
 
@@ -187,8 +295,9 @@
 
                 .wp_article_list {
                     .list_item {
-                        height: 43px!important;
-                        line-height: 43px!important;
+                        height: 38px !important;
+                        padding-top: 6px;
+                        line-height: 32px!important;
                         border-bottom: 2px solid #e5e5e5!important;
 
                         .Article_Index {
@@ -208,12 +317,20 @@
         display: flex;
         align-items: flex-start;
         width: 1200px;
+        padding: 0 20px;
         margin: 20px auto 0;
+
+        .left {
+            .h-header {
+                width: 550px;
+            }
+        }
 
         .left, .right {
             flex: 1;
 
             .h-header {
+                position: relative;
                 display: flex;
                 align-items: center;
 
@@ -227,6 +344,22 @@
                     font-size: 20px;
                     font-weight: bold;
                     cursor: default;
+                }
+
+                .module-more {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    height: 22px;
+                    margin-top: -11px;
+                    line-height: 22px;
+                    font-weight: bold;
+                    color: #337ab7;
+
+                    &:hover {
+                        color: #23527c;
+                        text-decoration: underline;
+                    }
                 }
             }
 
@@ -285,8 +418,8 @@
                 .wp_article_list {
                     .list_item {
                         height: 43px!important;
-                        padding: 0 14px!important;
-                        line-height: 43px!important;
+                        padding: 6px 14px 0!important;
+                        line-height: 37px!important;
                         border-bottom: 2px solid #e5e5e5!important;
 
                         .Article_Index {
@@ -306,6 +439,7 @@
         display: flex;
         align-items: flex-start;
         width: 1200px;
+        padding: 0 20px;
         margin: 20px auto 0;
 
         .left {
@@ -372,7 +506,7 @@
 
         h1 {
             width: 1200px;
-            padding-top: 30px;
+            padding: 30px 20px 0;
             margin: 0 auto;
             font-size: 20px;
             font-weight: bold;
@@ -382,6 +516,7 @@
             display: flex;
             align-items: flex-start;
             width: 1200px;
+            padding: 0 20px;
             margin: 10px auto 0;
 
             .link {
@@ -424,7 +559,6 @@
                     }
                 }
             }
-
         }
     }
 
@@ -434,6 +568,7 @@
         flex-flow: column;
         justify-content: center;
         height: 180px;
+        font-weight: bold;
         color: #fff;
         background-color: #39c;
 
